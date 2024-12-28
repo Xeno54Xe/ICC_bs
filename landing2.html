@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Body Shop</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Hurricane&display=swap');
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #FFFDD0;
+        }
+        header {
+            background: linear-gradient(135deg, #044236, #008080);
+            padding: 20px;
+            text-align: center;
+            animation: fadeIn 1.5s ease-in;
+        }
+        header h1 {
+            margin: 0;
+            color: #fff;
+            font-size: 3em;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .hero {
+            background-image: url('https://cdn.discordapp.com/attachments/1263748875752050810/1322461178118799441/WhatsApp_Image_2024-12-27_at_21.37.02_5838561f.jpg?ex=6770f573&is=676fa3f3&hm=09320d4e35b6f01fcf62724c10717f6ec9ee50b9d284deaa637e6a097bdccbeb&'); /* Replace with actual image URL */
+            background-size: cover;
+            background-position: center;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 120px 20px;
+            position: relative;
+            animation: slideIn 1.5s ease-in;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: 1;
+        }
+        .hero h2 {
+            position: relative;
+            font-size: 5em;
+            margin-bottom: 20px;
+            z-index: 2;
+            font-family: "Hurricane", serif;
+        }
+        .hero p {
+            position: relative;
+            font-size: 1.3em;
+            z-index: 2;
+        }
+        .container {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .section {
+            margin-bottom: 60px;
+            text-align: center;
+            animation: fadeIn 2s ease-in;
+        }
+        .section h3 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #8B4513;
+        }
+        .section p {
+            font-size: 1.2em;
+            line-height: 1.8;
+            color: #666;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .feature {
+            flex: 1;
+            min-width: 300px;
+            background: #FFFFFF;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .feature:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+        .feature h4 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .feature p {
+            font-size: 1em;
+            color: #666;
+        }
+        .feature img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .cta {
+            background: linear-gradient(135deg, #047304, #7e7e5c);
+            color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+            border-radius: 10px;
+            margin-bottom: 60px;
+            animation: zoomIn 1.5s ease-in;
+        }
+        .cta h3 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .cta p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        .cta a {
+            display: inline-block;
+            background: #FFD700;
+            color: #808000;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-size: 1em;
+            font-weight: bold;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+        .cta a:hover {
+            background: #808000;
+            color: #fff;
+        }
+        footer {
+            background: #003366;
+            color: #D3D3D3;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+        @media (max-width: 768px) {
+            .features {
+                flex-direction: column;
+                gap: 30px;
+            }
+            .feature {
+                min-width: auto;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <h1>T      h      e               B      o      d      y             S      h      o      p</h1>
+</header>
+
+<div class="hero">
+    <h2>Your Glow, Our Truth</h2>
+    <p>Discover beauty products that not only care for you but care for the world. Transparency has never been this stunning.</p>
+</div>
+
+<div class="container">
+    <div class="section">
+        <h3>Our Promise of Transparency</h3>
+        <p>We are thrilled to unveil our new commitment to complete transparency in our product journey. From sourcing to creation, our practices are now open for you to explore. Experience beauty with peace of mind, knowing our products are crafted responsibly and ethically.</p>
+    </div>
+
+    <div class="section" style="background-color: #8B4513; padding: 20px; border-radius: 10px;">
+        <h3>Why Choose Us?</h3>
+        <div class="features">
+            <div class="feature">
+                <img src="https://cdn.discordapp.com/attachments/1263748875752050810/1322460721782456432/WhatsApp_Image_2024-12-27_at_21.52.09_e84dd53c.jpg?ex=6770f506&is=676fa386&hm=dab26f2a21c0e5e9ab6d14a869e06f44e08117daa1788936532f2a675316de67&" alt="Sustainable Ingredients">
+                <h4>Sustainable Ingredients</h4>
+                <p>Every product is crafted using Ayurvedic, naturally sourced ingredients.</p>
+            </div>
+            <div class="feature">
+                <img src="https://cdn.discordapp.com/attachments/1263748875752050810/1322460711284379658/WhatsApp_Image_2024-12-27_at_22.22.28_9dfef538.jpg?ex=6770f503&is=676fa383&hm=274caf6e8562b8a86b572524e8a51bdb203c8c24c2aac89cd83b843030ac7121&" alt="Cruelty-Free Testing">
+                <h4>Zero Animal Testing</h4>
+                <p>Our products are cruelty-free, ensuring no harm to animals.</p>
+            </div>
+            <div class="feature">
+                <img src="https://media.discordapp.net/attachments/1263748875752050810/1322460661808369714/WhatsApp_Image_2024-12-27_at_22.37.21_74c1862e.jpg?ex=6770f4f7&is=676fa377&hm=56f92e0274610b313a1cfa8a9c24f067279a211fe8aa330a3decd10601861263&=&format=webp&width=361&height=437" alt="Traceable Origins">
+                <h4>Traceable Origins</h4>
+                <p>Track every ingredient's journey, from farm to bottle.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="cta">
+        <h3>How It Works</h3>
+        <p>Simply scan the QR code on your favorite product to view its complete sourcing and manufacturing details. Transparency has never been this easy or accessible.</p>
+        <a href="#">Explore Now</a>
+    </div>
+
+    <div class="section" style="background: linear-gradient(135deg, #E2725B, #FFFDD0); padding: 20px; border-radius: 10px;">
+        <h3>Join Our Journey</h3>
+        <p>Be a part of a revolution in beauty. Together, we can create a world where beauty thrives without compromise.</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Team Radon. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
