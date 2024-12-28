@@ -26,7 +26,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 
-If you have any questions or feedback, please contact us at [email@example.com](mailto:vanshdhillon2000@gmail.com).
+If you have any questions or feedback, please contact us at [vanshdhillon2000@gmail.com](mailto:vanshdhillon2000@gmail.com).
 Happy Mockup Creating!
 
 An Innovative by Team Radon for the ICC 2025 Submission.
